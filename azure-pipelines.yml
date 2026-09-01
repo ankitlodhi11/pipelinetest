@@ -20,6 +20,5 @@ stages:
           - task: TerraformTask@5
             inputs:
               provider: 'azurerm'
-              command: 'plan'
+              command: 'init'
               workingDirectory: '$(System.DefaultWorkingDirectory)/storage_account'
-              environmentServiceNameAzureRM: 'dev-subcription'
